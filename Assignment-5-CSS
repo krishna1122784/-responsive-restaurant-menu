@@ -1,0 +1,11 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+#main-content {
+    margin-top: 20px;
+}
