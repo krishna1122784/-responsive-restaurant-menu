@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Header Styling */
+        header {
+            background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-family: serif;
+            font-size: 40px;
+            text-transform: lowercase;
+        }
+
+        /* Navigation Styling */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin: 0 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a.active,
+        nav a:hover,
+        nav a:focus {
+            background-color: white;
+            color: #0000ff;
+        }
+
+        /* Layout */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Aside (Left Section) */
+        aside.left {
+            width: 20%;
+            min-width: 200px;
+            background: #527219;
+            padding: 10px;
+        }
+
+        aside.left img {
+            border: 2px solid #000;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Right Section */
+        section.right {
+            flex: 1;
+        }
+
+        section.right h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            margin-bottom: 40px;
+            border-collapse: collapse;
+            line-height: 35px;
+        }
+
+        table th {
+            background-image: linear-gradient(to bottom, #83b52b, #4f6d1a);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            opacity: 0.8;
+            color: #ffffff;
+            text-align: left;
+            padding-left: 15px;
+            padding: 10px;
+        }
+
+        table td {
+            background-color: #cee7a3;
+            opacity: 0.75;
+            text-align: left;
+            padding: 10px 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table td:hover,
+        table th:hover {
+            opacity: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            aside.left,
+            section.right {
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Delicious Bites</h1>
+    </header>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <aside class="left">
+            <img src="http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg" alt="Restaurant Image">
+            <img src="http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg" alt="Restaurant Image">
+        </aside>
+
+        <section class="right">
+            <h2>Our Menu</h2>
+
+            <table>
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken</td>
+                    <td>Juicy chicken with herbs</td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <td>Spaghetti Bolognese</td>
+                    <td>Classic Italian pasta</td>
+                    <td>$10.50</td>
+                </tr>
+                <tr>
+                    <td>Garden Salad</td>
+                    <td>Fresh veggies with vinaigrette</td>
+                    <td>$7.00</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Dessert</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chocolate Cake</td>
+                    <td>Rich chocolate layers</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Fruit Salad</td>
+                    <td>Seasonal fruits</td>
+                    <td>$4.50</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>
