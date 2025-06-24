@@ -1,0 +1,5 @@
+[
+    { "name": "Chicken", "short_name": "C" },
+    { "name": "Beef", "short_name": "B" },
+    { "name": "Sushi", "short_name": "S" }
+]
